@@ -1,0 +1,79 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-video-editor": {
+            "PACKAGE_NAME": "com.hello.video"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.hello.video"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.hello.video"
+        }
+    }
+}
