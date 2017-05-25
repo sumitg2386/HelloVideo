@@ -44,11 +44,36 @@
                 }
             }
         );
+		
+		VideoEditor.createThumbnail(
+			createThumbnailSuccess,
+			createThumbnailError,
+			{
+				fileUri: file.fullPath,
+				outputFileName: videoFileName,
+				atTime: 2,
+				width: 320,
+				height: 480,
+				quality: 100
+			}
+		);
+		
+		
+    };
+	
+	this.createThumbnailSuccess = function(result) {
+		// result is the path to the jpeg image on the device
+		console.log('createThumbnailSuccess, result: ' + result);
+	}
+	
+	this.createThumbnailError = function (error) {
+        console.log('createThumbnailSuccess, err: ' + error);
+		alert('VcreateThumbnailSuccess, err: ' + error);
     };
 
     this.videoCaptureError = function (error) {
-        console.log('Video recording, err: ' + result);
-		alert('Video recording, err: ' + result);
+        console.log('Video recording, err: ' + error);
+		alert('Video recording, err: ' + error);
     };
 
     this.videoTranscodeSuccess = function (result) {
@@ -56,7 +81,7 @@
         console.log('videoTranscodeSuccess, result: ' + result);
 		alert('videoTranscodeSuccess, result: ' + result);
 
-        VideoCaptureUtil.uploadFile(result);
+        VideoCaptureUtil.uploadFileUrl(result);
     };
 
     this.videoTranscodeError = function (err) {
