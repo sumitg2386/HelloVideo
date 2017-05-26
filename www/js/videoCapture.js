@@ -49,7 +49,7 @@
 			alert(err.message);
 		}
 		
-		try {
+		/*try {
 			VideoEditor.createThumbnail(
 				VideoCaptureUtil.createThumbnailSuccess,
 				VideoCaptureUtil.createThumbnailError,
@@ -64,7 +64,7 @@
 			);
 		} catch (err) {
 			alert(err.message);
-		}
+		}*/
 		
 		
     };
