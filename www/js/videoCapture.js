@@ -23,27 +23,31 @@
         var videoFileName = 'video-name-here'; // I suggest a uuid
 		alert("compress");
 		alert(VideoEditorOptions.OutputFileType.MPEG4);
-        VideoEditor.transcodeVideo(
-            VideoCaptureUtil.videoTranscodeSuccess,
-            VideoCaptureUtil.videoTranscodeError,
-            {
-                fileUri: file.fullPath,
-                outputFileName: videoFileName,
-                outputFileType: VideoEditorOptions.OutputFileType.MPEG4,
-                optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse.YES,
-                saveToLibrary: true,
-                maintainAspectRatio: true,
-                width: 640,
-                height: 640,
-                videoBitrate: 1000000, // 1 megabit
-                audioChannels: 2,
-                audioSampleRate: 44100,
-                audioBitrate: 128000, // 128 kilobits
-                progress: function (info) {
-                    console.log('transcodeVideo progress callback, info: ' + info);
-                }
-            }
-        );
+		try {
+			VideoEditor.transcodeVideo(
+				VideoCaptureUtil.videoTranscodeSuccess,
+				VideoCaptureUtil.videoTranscodeError,
+				{
+					fileUri: file.fullPath,
+					outputFileName: videoFileName,
+					outputFileType: VideoEditorOptions.OutputFileType.MPEG4,
+					optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse.YES,
+					saveToLibrary: true,
+					maintainAspectRatio: true,
+					width: 640,
+					height: 640,
+					videoBitrate: 1000000, // 1 megabit
+					audioChannels: 2,
+					audioSampleRate: 44100,
+					audioBitrate: 128000, // 128 kilobits
+					progress: function (info) {
+						console.log('transcodeVideo progress callback, info: ' + info);
+					}
+				}
+			);
+		} catch (err) {
+			alert(err.message);
+		}
 		
 		/*VideoEditor.createThumbnail(
 			VideoCaptureUtil.createThumbnailSuccess,
