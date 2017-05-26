@@ -45,7 +45,7 @@
             }
         );
 		
-		VideoEditor.createThumbnail(
+		/*VideoEditor.createThumbnail(
 			VideoCaptureUtil.createThumbnailSuccess,
 			VideoCaptureUtil.createThumbnailError,
 			{
@@ -56,7 +56,7 @@
 				height: 480,
 				quality: 100
 			}
-		);
+		);*/
 		
 		
     };
