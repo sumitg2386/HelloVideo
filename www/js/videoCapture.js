@@ -49,18 +49,22 @@
 			alert(err.message);
 		}
 		
-		/*VideoEditor.createThumbnail(
-			VideoCaptureUtil.createThumbnailSuccess,
-			VideoCaptureUtil.createThumbnailError,
-			{
-				fileUri: file.fullPath,
-				outputFileName: videoFileName,
-				atTime: 2,
-				width: 320,
-				height: 480,
-				quality: 100
-			}
-		);*/
+		try {
+			VideoEditor.createThumbnail(
+				VideoCaptureUtil.createThumbnailSuccess,
+				VideoCaptureUtil.createThumbnailError,
+				{
+					fileUri: file.fullPath,
+					outputFileName: videoFileName,
+					atTime: 2,
+					width: 320,
+					height: 480,
+					quality: 100
+				}
+			);
+		} catch (err) {
+			alert(err.message);
+		}
 		
 		
     };
