@@ -46,8 +46,8 @@
         );
 		
 		VideoEditor.createThumbnail(
-			createThumbnailSuccess,
-			createThumbnailError,
+			VideoCaptureUtil.createThumbnailSuccess,
+			VideoCaptureUtil.createThumbnailError,
 			{
 				fileUri: file.fullPath,
 				outputFileName: videoFileName,
@@ -81,7 +81,7 @@
         console.log('videoTranscodeSuccess, result: ' + result);
 		alert('videoTranscodeSuccess, result: ' + result);
 
-        VideoCaptureUtil.uploadFileUrl(result);
+        //VideoCaptureUtil.uploadFileUrl(result);
     };
 
     this.videoTranscodeError = function (err) {
