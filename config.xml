@@ -115,5 +115,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+	 <gap:platform name="winphone" />
     <plugin name="cordova-plugin-video-editor" spec="~1.1.2" />
 </widget>
